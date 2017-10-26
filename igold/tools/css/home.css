@@ -1,0 +1,173 @@
+body,html{margin:0;padding: 0;}
+*{box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;padding:0;margin:0;}
+
+/*general*/
+@font-face{font-family:ralewayR;src: url(../fonts/Raleway-Regular.ttf);}
+@font-face{font-family:ralewayB;src: url(../fonts/Raleway-Bold.ttf);}
+
+.fmralewayR{font-family:ralewayR;}
+.fmralewayB{font-family:ralewayB;}
+.fLeft{float:left !important;}
+.fRight{float:right !important;}
+.txtLower{text-transform: lowercase;}
+.txtUpper{text-transform: uppercase;}
+.txtCenter{text-align: center!important;}
+.txtCap{text-transform: capitalize;}
+.txtRight{text-align: right!important;}
+.txtLeft{text-align: left!important;}
+.txtOver{overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.pLeft85{padding-left:85px;}
+.pTop60{padding-top:60px !important;}
+.pLeft40{padding-left:40px;}
+.background{background:#EBECED;}
+.font9{font-size:9px;}
+.font10{font-size:10px;}
+.font11{font-size:11px;}
+.font12{font-size:12px !important;}
+.font13{font-size:13px !important;}
+.font14{font-size:14px !important;}
+.p05{padding:0px 5px;}
+.p010{padding:0px 10px;}
+.p15_0{padding:15px 0px;}
+.p10{padding:10px;}
+.pTop5{padding-top:5px;}
+.pTop15{padding-top:15px;}
+.pTop10{padding-top:10px;}
+.mBottom10{margin-bottom:10px;}
+.mBottom20{margin-bottom:20px;}
+.mBottom40{margin-bottom:40px;}
+.brkWord{word-wrap:break-word;}
+.dflex{display: -webkit-flex;display: flex;}
+.itemCenter{display: -webkit-flex;display: flex;-webkit-flex-direction: row ;flex-direction: row; -webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;}
+.itemLeft{display: -webkit-flex;display: flex;-webkit-flex-direction: row; flex-direction: row;-webkit-align-items: flex-start; align-items: flex-start;}
+.itemRight{display: -webkit-flex;display: flex;-webkit-flex-direction: row; flex-direction: row;-webkit-justify-content: flex-end;justify-content: flex-end;}
+.itemClmn{ -webkit-flex-direction: column; flex-direction: column; -webkit-justify-content: flex-start;justify-content: flex-start;}
+.spcBetween{-webkit-justify-content: space-between;justify-content: space-between;}
+.dn{display:none;}
+.dspnone{display:none;}
+.poR{position:relative;}
+.dinline{display:inline-block;vertical-align:middle;}
+.cPointer{cursor:pointer;}
+/*general*/
+/*common*/
+.container{width:100%;height:100%;padding-top:110px;}
+.wrapper{width:100%;height:auto;}
+.wrapperMax{width:100%;height:auto;max-width:1200px;margin:auto;}
+/*header*/
+.headerSection{width:100%;height:60px;background:#fff;position:fixed;left:0;top:0;}
+.logo{width: 160px;height: 60px;background: url(../img/samplelogo.svg)no-repeat;background-size: auto 30px;background-position: 0px center;}
+.icn_profile{width: 40px;height: 60px; background: url(../img/profile.svg)no-repeat;background-size: auto 20px;background-position: 100%;cursor: pointer;}
+.icn_setting{width: 40px;height: 60px;background: url(../img/setting.svg)no-repeat;background-size: auto 20px;background-position: center;cursor: pointer;}
+.icn_txtcnt{width: auto; height: 60px;line-height: 60px;padding-left: 30px;color: #B3B3B3;font-size: 9px; text-transform: uppercase;padding-right: 20px;cursor:pointer;}
+.icn_bidauction{background:url(../img/MyAuction.svg)no-repeat;background-size:auto 20px; background-position:0px center;}
+.icn_closedauction{background:url(../img/ClosedAuction.svg)no-repeat;background-size:auto 20px; background-position:0px center;}
+.icn_liveauction{background:url(../img/LiveAuction.svg)no-repeat;background-size:auto 20px; background-position:0px center;}
+.icn_closedauctionSelect{background:url(../img/ClosedAuctionSelected.svg)no-repeat;background-size:auto 20px; background-position:0px center;}
+.icn_liveauctionSelect{background:url(../img/LiveAuctionSelected.svg)no-repeat;background-size:auto 20px; background-position:0px center;}
+.icn_auctionSelect{background:url(../img/MyAuctionSelected.svg)no-repeat;background-size:auto 20px; background-position:0px center;}
+.icn_dashboard{background:url(../img/Dashboard.svg)no-repeat;background-size:auto 20px; background-position:0px center;}
+.icnAxisbnk{background:url(../img/Axis.png)no-repeat;background-size:auto 60px;background-position:0px center;}
+.icnBob{background:url(../img/BankOfBaroda.png)no-repeat;background-size:auto 60px;background-position:0px center;}
+.icnCbi{background:url(../img/CBI.png)no-repeat;background-size:auto 60px;background-position:0px center;}
+.icnPdf{width:35px;height:35px;display:inline-block;background:url(../img/PDF.svg)no-repeat;background-size: auto 22px;background-position:center;cursor:pointer;}
+.icn_bid{width:25px;height:25px;background:url(../img/Time.svg)no-repeat;background-size:auto 15px;background-position:center;}
+.icnMore{background:url(../img/80.svg)no-repeat;background-size:auto 30px;background-position:center;}
+.icnPerson{width:15px;height:15px;background:url(../img/profile.svg)no-repeat;background-size:auto 11px;background-position:center;}
+.icnBadge{width:25px;height:25px;background:url(../img/Badge.svg)no-repeat;background-size:auto 17px;background-position:center;}
+.icnInfo{background:url(../img/info.svg)no-repeat;background-size:auto 13px;background-position:0px center;}
+/*header*/
+/*search header*/
+.searchSection{width:100%;height:50px;position:fixed;top:60px;left:0;background:#FE936F;line-height:50px;}
+.general_cont{width:auto;height:100%;line-height:50px}
+.icnClosedauc{width: auto;height: 30px;line-height: 30px;color: #fff;font-size: 10px; padding-left: 30px;display: inline-block;background: url(../img/ClosedAuctionWhite.svg)no-repeat;background-size: auto 22px;background-position: 0px center; vertical-align: middle;}
+.icnLiveauc{width: auto;height: 30px;line-height: 30px;color: #fff;font-size: 10px; padding-left: 30px;display: inline-block;background: url(../img/LiveAuctionWhite.svg)no-repeat;background-size: auto 20px;background-position: 0px center; vertical-align: middle;}
+.icnAuc{width: auto;height: 30px;line-height: 30px;color: #fff;font-size: 10px; padding-left: 30px;display: inline-block;background: url(../img/MyAuctionWhite.svg)no-repeat;background-size: auto 20px;background-position: 0px center; vertical-align: middle;}
+.srch_cnt{width: 195px;height: 30px;padding-right: 40px;position: relative;background: rgba(255,255,255,0.3);display: inline-block;vertical-align: middle;border-radius: 2px;}
+.icn_srch{width: 30px;height: 30px;background: url(../img/Search.svg)no-repeat;background-size: auto 15px;background-position: center; position: absolute;right: 7px;top: 0;}
+.srch_cnt .srch_input{width:100%;height:100%;border:none;outline:none;color:#fff;padding:0px 10px;line-height:30px;font-size:10px;background:none;}
+.srch_cnt .srch_input::-webkit-input-placeholder {color: #fff;}
+/*search header*/
+.data_cont{width:100%;height:auto;}
+.accrodinetab_Header{width:100%;height:50px;line-height:50px;color:#B3B3B3;font-size:9px;text-transform:uppercase;padding: 0px 10px;display: -webkit-flex;display: flex;-webkit-flex-direction: row; flex-direction: row;}
+.accrodine_Card{width:100%;height:auto;background:#fff;margin-bottom:10px;box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2); -webkit-box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2);-moz-box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2);-o-box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2); padding:0px 10px;}
+.data_wrapper{width:100%;height:auto;display: -webkit-flex; display: flex;padding:10px 0px}
+.txtVal{width:100%;font-size:11px;color:#4A4E69;display:flex;align-items: center;}
+.txtVal1{width:100%;height:17.5px;line-height:20px;color:#4A4E69 ;font-size:11px;}
+.txtVal2{width:100%;height:17.5px;line-height:15px;line-height: 14px;font-size: 10px;color:#4A4E69;}
+.clrGreen{color:#2CC185 !important;}
+.clrOrng{color:#FE936F !important;}
+.clrRed{color:#FF5546 !important;}
+.clrYellow{color:#FEA32D !important;}
+.spnRpy{ width: auto; height: 100%; padding-left: 10px;background: url(../img/rupee.svg)no-repeat; background-size: auto 17px;background-position: -5px center;}
+.spnRpyorng{ width: auto; height: 100%;padding-left: 10px;background: url(../img/rupeeorng.svg)no-repeat;background-size: auto 17px; background-position: -5px center;color: #FE936F;}
+.statusBid{width:auto;height:25px;border:1px solid #2CC185;color:#2CC185;font-size:9px;text-transform:uppercase;line-height:25px;text-align:center;padding:0px 10px;cursor:pointer;}
+.statusApplied{width:auto;height:25px;border:1px solid #2CC185;color:#fff;font-size:9px;text-transform:uppercase;line-height:25px;text-align:center;padding:0px 10px;background:#2CC185;border-radius: 2px;}
+/*common*/
+/*button*/
+.button{width: auto;height: 35px;color: #fff;font-size: 10px;text-align: center;line-height: 35px;background: #FE936F;border-radius: 2px;cursor: pointer; padding: 0px 25px;text-transform: uppercase;}
+/*button*/
+/*closed auction jewellery*/
+.tabdata_cnt{width:100%;height:auto;}
+.row{}
+.row .colAut{width:auto;height:auto;}
+.row .col100{width:100%;height:auto;}
+.row .col20{width:20%;height:auto;}
+.row .col14{width:14%;height:auto;}
+.row .col15{width:15%;height:auto;}
+.row .col18{width:18%;height:auto;}
+.row .col13{width:13%;height:auto;}
+.row .col11{width:11%;height:auto;}
+.row .col10{width:10%;height:auto;}
+.row .col8{width:8%;height:auto;}
+.row .col7{width:7%;height:auto;}
+.row .col25{width:25%;height:auto;}
+.row .col28{width:28%;height:auto;}
+.row .col30{width:30%;height:auto;}
+.row .col50{width:50%;height:auto;}
+.row .col70{width:70%;height:auto;}
+.expandIcon{position: absolute;left: 0;top: 0;bottom: 0; margin: auto;width:30px;height:30px;}
+.expandIcon::before {content: ""; position: absolute;top: 0;left: 0; width: 30px;height: 30px;background: url(../img/minus.svg)no-repeat; background-position: center;background-size: auto 20px;cursor: pointer;transition: 100ms ease-in-out;-moz-transition: 100ms ease-in-out; -ms-transition: 100ms ease-in-out;-webkit-transition: 100ms ease-in-out;-o-transition: 100ms ease-in-out; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);}
+.expandIcon::after {content: "";position: absolute;top: 0;left: 0;width: 30px;height: 30px;background: url(../img/minus.svg)no-repeat; background-position: center;background-size: auto 20px;cursor: pointer;}
+.expandRotate.expandIcon::before {-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);}
+.tabel_header{width:100%;height:40px;background:#F9F9F9;color: #B3B3B3;font-size: 9px;text-transform: uppercase;padding:0px 5px;}
+.dataList{width:100%;height:auto;list-style-type:none;padding:0;margin:0;}
+.dataList li{width:100%;height:auto;padding:10px 0px;border-bottom:1px solid #EBECED;}
+.dataList li:last-child{border-bottom:none;}
+.seperater{position:relative;}
+.seperater:after{content:'';width:1px;height:60%;right:0;top:0;bottom:0;margin:auto;border-right:1px solid #EBECED;position:absolute;}
+/*bidding popup*/
+.popupcnt{width:100%;height:100%;position:fixed;background:rgba(0,0,0,0.7);z-index:999;left:0;top:0;display:none;opacity:0;}
+.bidPopwrp{width: 690px;height: 440px;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;background: #fff;padding: 25px;border-radius: 3px;opacity:0;transform:translateY(100vh);-webkit-transform:translateY(100vh);-moz-transform:translateY(100vh); }
+.heading_bidpop{width:100%;height:35px;line-height:35px;color:#4A4E69;font-size:20px;line-height:35px;}
+.lblhedaer_Bidpop{width:100%;height:20px;line-height:20px;color:#4A4E69;font-size:10px;text-transform:uppercase;}
+.pop_biddetailscnt{width:100%;height:auto;padding:10px 0px;border-bottom:1px solid #EBECED;}
+.pop_biddetailscnt .col25{padding:10px;border-right:1px solid #EBECED;}
+.pop_biddetailscnt .col25:first-child{padding:10px 10px 10px 0px;}
+.pop_biddetailscnt .col25:last-child{border-right:none;}
+.caratBox{width:50px;height:50px;border-radius:3px;background:#EBECED;line-height:50px;margin: 0px 7px 7px 0px;}
+.inform_Minimumbid{width: 100%;height: 20px;line-height: 20px;color: #4A4E69;font-size: 12px;padding-left: 20px;}
+.txtBox_enterbid{width: 180px;height: 35px;border: 1px solid #EBECED;color: #4A4E69;line-height: 35px;border-radius: 2px;padding: 0px 10px;outline: none;font-size: 12px;}
+.closePopup{width:35px;height:35px;background:url(../img/Close.svg)no-repeat;background-size:auto 25px;background-position:center;cursor:pointer;}
+/*rank shit */
+.rankShitwrp{width: 370px;height: 470px;background: #fff;position: absolute;border-radius: 2px;left: 0;right: 0;top: 0; bottom: 0;margin: auto;}
+.rnkShitheader{width:100%;height:70px;padding:0px 30px;background:#FE936F;line-height:70px;}
+.rankShit_htxt{width: auto;height: 30px;line-height: 30px;padding-left: 25px;background: url(../img/Badgew.svg)no-repeat; background-size: auto 20px;background-position: 0px center;color: #fff; font-size: 15px;display: inline-block;vertical-align: middle;}
+.close_rankshit{width:30px;height:30px;background:url(../img/CloseW.svg)no-repeat;background-size:auto 20px;background-position:center;cursor:pointer;}
+.rankDatacnt{width:100%;height:400px;padding:10px 30px;overflow-y:auto;}
+.rnkpop.col100{border-bottom:1px solid #EBECED;height:auto;line-height:45px;padding:2px 0px;cursor:pointer;}
+.rnkpop.col100:first-child{padding:0px 0px 2px 0px;}
+.rankCount{width: auto; height: 30px;color: #4A4E69;line-height: 30px;padding-left: 20px;display: inline-block;vertical-align: middle;font-size: 13px;}
+.rankCount.icnrank{background:url(../img/Badge.svg)no-repeat;background-size:auto 18px;background-position:0px center;}
+
+/*sign inpage*/
+.signInpagecnt{width:100%;height:calc(100vh - 60px);position:relative;}
+.signInwrp{width:300px;height:260px;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;}
+.userNametxt{width:100%;height:40px;padding-left:35px;line-height:40px;color:#4A4E69;font-size:11px;border:none;outline:none;border-radius:2px;    box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2); -webkit-box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2);-moz-box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2); -o-box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2);}
+.userNametxt.icn_Username{background:#fff url(../img/profile.svg)no-repeat;background-size:auto 15px;background-position:10px center;}
+.userNametxt.icn_Password{background:#fff url(../img/Password.svg)no-repeat;background-size:auto 15px;background-position:10px center;}
+.frgt_pswrdtxt{width:auto;height:35px;color:#4A4E69;line-height:35px;font-size:10px;text-align:right;text-transform:uppercase;cursor:pointer;}
+
+
+
+
+
